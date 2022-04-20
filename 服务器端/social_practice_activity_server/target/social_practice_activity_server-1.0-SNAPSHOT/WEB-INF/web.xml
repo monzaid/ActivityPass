@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    
+    <servlet>
+        <servlet-name>RegisServlet</servlet-name>
+        <servlet-class>com.example.social_practice_activity_server.web.RegisServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisServlet</servlet-name>
+        <url-pattern>/RegisServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.example.social_practice_activity_server.web.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ActivityServlet</servlet-name>
+        <servlet-class>com.example.social_practice_activity_server.web.ActivityServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ActivityServlet</servlet-name>
+        <url-pattern>/ActivityServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.example.social_practice_activity_server.web.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/UserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SaveUserImageServlet</servlet-name>
+        <servlet-class>com.example.social_practice_activity_server.web.SaveUserImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveUserImageServlet</servlet-name>
+        <url-pattern>/SaveUserImageServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>VersionServlet</servlet-name>
+        <servlet-class>com.example.social_practice_activity_server.web.VersionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VersionServlet</servlet-name>
+        <url-pattern>/VersionServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ActivityRegisterServlet</servlet-name>
+        <servlet-class>com.example.social_practice_activity_server.web.ActivityRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ActivityRegisterServlet</servlet-name>
+        <url-pattern>/ActivityRegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpFaceServlet</servlet-name>
+        <servlet-class>com.example.social_practice_activity_server.web.UpFaceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpFaceServlet</servlet-name>
+        <url-pattern>/UpFaceServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>VerifyFaceServlet</servlet-name>
+        <servlet-class>com.example.social_practice_activity_server.web.VerifyFaceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VerifyFaceServlet</servlet-name>
+        <url-pattern>/VerifyFaceServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MsgServlet</servlet-name>
+        <servlet-class>com.example.social_practice_activity_server.web.MsgServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MsgServlet</servlet-name>
+        <url-pattern>/MsgServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

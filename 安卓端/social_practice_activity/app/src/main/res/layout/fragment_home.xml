@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <com.example.social_practice_activity.myView.UpdataListView
+            android:id="@+id/u"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="暂无活动参加"
+            android:textSize="15dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="5dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@mipmap/top"
+            android:visibility="gone"
+            app:backgroundTint="#FFF"
+            app:backgroundTintMode="screen"
+            app:hoveredFocusedTranslationZ="18dp"
+            app:pressedTranslationZ="18dp" />
+
+
+</RelativeLayout>

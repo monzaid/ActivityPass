@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".origin.Welcome"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/white"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/ib_title_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:background="@null"
+            android:src="@mipmap/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="完善个人信息"
+            android:textColor="@color/dark"
+            android:textSize="20dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_msgUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/et_sharp">
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="昵&#12288;称"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/dark" />
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/et_sharp"
+                    android:hint="请输入昵称"
+                    android:maxLength="12"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_below="@+id/rl_face"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginRight="50dp"-->
+<!--                android:background="@drawable/shape_wihte_frame">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView1"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:lines="1"-->
+<!--                    android:padding="1dp"-->
+<!--                    android:text="手机号"-->
+<!--                    android:textSize="11sp" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/view1"-->
+<!--                    android:layout_width="1dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginLeft="2dp"-->
+<!--                    android:layout_marginRight="2dp"-->
+<!--                    android:layout_toRightOf="@+id/textView1"-->
+<!--                    android:background="@color/gray" />-->
+
+<!--&lt;!&ndash;                <View android:layout_width="1px" layout_height="match_parent" android:background="@color/dark" ></View>&ndash;&gt;-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/phonenumber"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginLeft="2dp"-->
+<!--                    android:layout_toRightOf="@+id/view1"-->
+<!--                    android:background="@drawable/transparent"-->
+<!--                    android:ems="19"-->
+<!--                    android:hint="请输入手机号"-->
+<!--                    android:inputType="phone"-->
+<!--                    android:padding="1dp"-->
+<!--                    android:textSize="12sp">-->
+
+<!--                    <requestFocus />-->
+<!--                </EditText>-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/del_phonenumber"-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginRight="3dp"-->
+<!--                    android:src="@drawable/text_del" />-->
+<!--            </RelativeLayout>-->
+
+
+            <LinearLayout
+                android:id="@+id/ll_msgSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_msgUsername"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_sharp">
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="性&#12288;别"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/dark" />
+                <RadioGroup
+                    android:id="@+id/rg_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="男"/>
+                    <RadioButton
+                        android:id="@+id/rg_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="女"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_msgAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_msgSex"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_sharp">
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="年&#12288;龄"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/dark" />
+                <EditText
+                    android:id="@+id/et_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:hint="请输入年龄"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:maxLength="12"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_msgTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_msgAge"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_sharp">
+                <TextView
+                    android:id="@+id/tv_telephone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="电&#12288;话"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/dark" />
+
+                <EditText
+                    android:id="@+id/et_telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:hint="请输入电话号码"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:maxLength="12"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_msgProvince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_msgTelephone"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_sharp">
+
+                <TextView
+                    android:id="@+id/tv_province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="所在地"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/dark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/s_province"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/province"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:maxLength="12" />
+
+                    <Spinner
+                        android:id="@+id/s_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:maxLength="12" />
+
+                    <Spinner
+                        android:id="@+id/s_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:maxLength="12" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_face"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_selector"
+                android:text="保存"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_face"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_msgProvince"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:text="@string/toRegiser"
+                android:textColor="#000">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:singleLine="true"
+                    android:text="上传人脸信息"
+                    android:textColor="@color/dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toLeftOf="@id/iv_image"
+                    android:text="次数"
+                    android:textColor="@color/gray"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/arrow_right" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

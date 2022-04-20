@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".origin.Welcome">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/white"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/ib_title_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:background="@null"
+            android:src="@mipmap/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="活动通・注册"
+            android:textColor="@color/dark"
+            android:textSize="20dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+        <RelativeLayout
+            android:id="@+id/rl_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_header"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/asd" />
+
+            <LinearLayout
+                android:id="@+id/ll_msgAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_header"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ffffff">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_account"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="@string/acount"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:textSize="20sp" />-->
+
+                <EditText
+                    android:id="@+id/et_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/et_sharp"
+                    android:hint="账&#12288;&#12288;号：最多输入12个数字"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:imeOptions="actionNext"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_username"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/ll_msgAccount"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:background="#ffffff">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_username"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="@string/username"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:textSize="20sp"/>-->
+<!--                <EditText-->
+<!--                    android:id="@+id/et_username"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:imeOptions="actionNext"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:background="@null"-->
+<!--                    android:inputType="text"-->
+<!--                    android:maxLength="20"-->
+<!--                    android:padding="10dp"/>-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/ll_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_msgAccount"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ffffff">
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_password"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="@string/password"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:textSize="20sp"/>-->
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/et_sharp"
+                    android:hint="密&#12288;&#12288;码：最多输入18个字符"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="18"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_password"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ffffff">
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_confirm_password"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="@string/confirmPassword"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:textSize="20sp"/>-->
+                <EditText
+                    android:id="@+id/et_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/et_sharp"
+                    android:hint="确认密码：最多输入18个字符"
+                    android:inputType="textPassword"
+                    android:maxLength="18"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_confirm_password"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_selector"
+                android:enabled="false"
+                android:text="@string/register"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_confirm_password"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:text="@string/toLogin"
+                android:textColor="#000" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_registerSuccessful"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/iv_registerSuccessful"
+            android:layout_width="192dp"
+            android:layout_height="185dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/register_successful" />
+
+        <TextView
+            android:id="@+id/tv_registerSuccessful"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_registerSuccessful"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/registerSuccessful"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:text="登录账号" />
+
+            <Button
+                android:id="@+id/btn_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:text="完善个人信息" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

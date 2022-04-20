@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".discover.ActivityDetail">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_activity"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="活动消息"-->
+<!--                android:textSize="25sp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:textColor="@color/dark"-->
+<!--                android:singleLine="true"-->
+<!--                android:layout_margin="40dp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_inform"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="通知消息"-->
+<!--                android:textSize="25sp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:textColor="@color/dark"-->
+<!--                android:singleLine="true"-->
+<!--                android:layout_margin="40dp"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+    <com.example.social_practice_activity.myView.UpdataListView
+        android:id="@+id/u"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="暂无消息通知"
+        android:textSize="15dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:src="@mipmap/top"
+        android:visibility="gone"
+        app:backgroundTint="#FFF"
+        app:backgroundTintMode="screen"
+        app:hoveredFocusedTranslationZ="18dp"
+        app:pressedTranslationZ="18dp" />
+</RelativeLayout>
